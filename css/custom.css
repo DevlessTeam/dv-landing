@@ -1,0 +1,64 @@
+.homeBtn {
+    margin-top: 20px;
+}
+.homeBtn a.btnOne {
+	background: #288feb;
+}
+.homeArea {
+    background: url("../img/bg.png") repeat;
+}
+@media only screen and (max-width: 6000px) and (min-width: 992px){
+	header nav#navbar > ul {
+	     border-right: none; 
+	}
+}
+.bg-blue {
+	background: #288feb;
+}
+.bg-light {
+	background: #f0f5fa;
+}
+.img-cut {
+	margin-bottom: -120px;
+}
+.signUpArea .signUpForm input.signUpEmail {
+	border: 1px solid #e4e4e4;
+    border-radius: 4px;
+    color: #9cb0c2;
+    float: left;
+    line-height: 50px;
+    padding-left: 25px;
+    transition: all 0.4s ease 0s;
+    width: 79%;
+}
+.signUpArea .signUpForm input.signUpSubmit {
+    border: medium none;
+    border-radius: 4px;
+    float: right;
+    font-family: "proxima_nova_rgbold";
+    font-size: 15px;
+    line-height: 52px;
+    text-transform: uppercase;
+    width: 20%;
+    background: #233141;
+    color: #fff;
+}
+.footerLogo img {
+	height: 37px;
+}
+.footerTxt {
+    margin-bottom: 0;
+}
+#nav .Btn {
+    min-width: 140px;
+    background: #ed8100;
+}
+.homeContent span.h2 {
+    font-size: 30px;
+}
+.stepContent {
+    height: auto;
+}
+.stepContent .h4 {
+    margin-top: 35px;
+}
