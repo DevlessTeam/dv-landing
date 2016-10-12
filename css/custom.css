@@ -63,7 +63,7 @@
     height: 70px;
 }
 .homeArea {
-    background: url('https://spark.laravel.com/img/marketing/spark-bg.png') #ffffff;
+    background: url('../img/my_bg.png') #ffffff;
     border-bottom: 1px solid #eaeaea;
     background-size: 200px auto;
     background-position: 25px 25px;
