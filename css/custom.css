@@ -69,7 +69,7 @@
     background-position: 25px 25px;
 }
 .iconBg {
-    background: url('../img/my_bg2.jpg') #ffffff;
+    /*background: url('../img/my_bg2.jpg') #ffffff;*/
 }
 .homeContent span.h2 {
     color: #233141;
