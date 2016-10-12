@@ -63,10 +63,13 @@
     height: 70px;
 }
 .homeArea {
-    background: url('../img/my_bg.png') #ffffff;
+    background: url('../img/my_bg.jpg') #ffffff;
     border-bottom: 1px solid #eaeaea;
     background-size: 200px auto;
     background-position: 25px 25px;
+}
+.iconBg {
+    background: url('../img/my_bg2.jpg') #ffffff;
 }
 .homeContent span.h2 {
     color: #233141;
@@ -76,4 +79,7 @@
 }
 .ctaTxt p {
     margin-bottom: 30px;
+}
+.singleService {
+    margin-top: 0;
 }
