@@ -83,3 +83,18 @@
 .singleService {
     margin-top: 0;
 }
+header .headerBottomArea {
+    padding: 0;
+}
+#navbar li {
+    padding: 20px 10px;
+}
+header .logo {
+    margin-top: 20px;
+}
+#navbar .current-menu-item {
+    background: #ed8100;
+}
+header nav#navbar ul > li.current-menu-item > a{
+    color: #fff;
+}
