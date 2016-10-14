@@ -97,8 +97,7 @@
                         <div class="stepNo">1</div>
                         <div class="stepContent">
                             <div class="h4">Roll out an instance</div>
-                            <p>Set up a DevLess instance with a 1-click Heroku deployment. You can also deploy manually if you’d prefer a different platform.</p>
-                            <!-- We make it insanely easy to set up on popular hosting platforms with 1-click options. We’ve taken the pain out of deploying to platforms like Heroku by giving you 1-click options. -->
+                            <p>Set up a DevLess instance with a 1-click Heroku deployment. You can also <a href="https://docs.devless.io/docs/1.0/installation">deploy</a> on other host of your choice.</p>
                         </div>
                     </div>
                 </div>
@@ -107,8 +106,7 @@
                         <div class="stepNo">2</div>
                         <div class="stepContent">
                             <div class="h4">Install plug and play modules</div>
-                            <p>Our store of plug and play modules provide most of the functionality you’ll need to power your backend, including authentication, user management, and transactional emails.</p>
-                            <!-- <p>Our store of plug and services will provide most of the modules you’ll need to power your backend. These range from authentication, emailing all the way to image upload services. Don’t see what you need? Build from scratch without touching code or integrate a third-party service.</p> -->
+                            <p>Devless provides plug and play modules for common functionality you’ll need to power your backend, including authentication, user management, and transactional emails.</p>
                         </div>
                     </div>
                 </div>
@@ -118,8 +116,7 @@
                         <div class="stepContent">
                             <div class="h4">Ready!</div>
                             <p>Use any frontend technology of your choice - it’ll work with your DevLess backend.</p>
-                            <!-- <p>Your backend is ready! Our intuitively designed API console reveals all the endpoints you’ll need for your CRUD operations. Use any frontend technology of your choice and be assured it will readily work with your Devless backend.</p> -->
-                        </div>
+                         </div>
                     </div>
                 </div>
                 <div class="col-md-12 mr-t-50 text-center">
@@ -139,9 +136,9 @@
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 overflow-hidden">
                     <div class="sectionTitle">
-                        <div class="h2">Your backend integration is only <br>Create your <span>backend</span> in <span>under 5 mins</span></div>
+                        <div class="h2">Quick Deployment steps <br>Create your <span>backend</span> in <span>under 5 mins</span></div>
                     </div>
-                    <img src="https://zapier.cachefly.net/static/Cv9bFH/images/homepage/editor/editor.png" class="img-cut">
+                    <center><img src="img/intro.gif" class="img-cut"></center>
                 </div>
             </div>
         </div>
@@ -170,7 +167,7 @@
                     <div class="ctaRight ctaTxt">
                         <div class="ctaCell">
                             <div class="h3">Say goodbye to <span>vendor lock-in!</span></div>
-                            <p>DevLess is open source, thus is infinitely customizable, and you’ll never be locked into a proprietary system. We are backed by a community of developers who contribute to the project and provide a high level of support to each other.</p>
+                            <p>DevLess is open source, thus is infinitely customizable, and you’ll never be locked into a proprietary system. We are backed by a community of developers who contribute to the project and provide a high level of support to the project.</p>
                             <a href="https://heroku.com/deploy?template=https://github.com/DevlessTeam/DV-PHP-CORE/tree/heroku2" class="heroBtn">
                                 <img src="img/get_started.svg" alt="Deploy">
                             </a>
@@ -264,12 +261,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 clearfix">
-                    <form action="#" class="signUpForm  animated" method="get">
+                    <div class="signUpForm  animated">
                         <div class="signUpInput">
-                            <input class="signUpEmail" type="email" name="email" placeholder="name@example.com">
-                            <input class="signUpSubmit" type="submit" name="submit" value="Sign Up">
+                            <input class="signUpEmail" id="email" type="email" name="email" placeholder="name@example.com">
+                            <input class="signUpSubmit" type="submit" onclick="signUp()" name="submit" value="Sign Up">
                         </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -280,7 +277,7 @@
     <footer class="secPdng animated">
         <div class="container">
             <div class="row">
-                <div class="col-sm-3">
+                <div class="col-sm-4">
                     <div class="footerInfo">
                         <a href="index-1.html" class="footerLogo">
                             <img src="https://devless.io/images/dv_logo_transp.png" alt="">
@@ -290,28 +287,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-3">
-                    <div class="widget">
-                        <div class="h4">About Devless</div>
-                        <ul class="footerLink">
-                            <!-- <li><a href="#">Features</a></li> -->
-                            <li><a href="#">FAQs</a></li>
-                            <li><a href="#">Pricing</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-3">
+                
+                <div class="col-sm-4">
                     <div class="widget">
                         <div class="h4">Resources</div>
                         <ul class="footerLink">
                             <li><a href="https://docs.devless.io/">Documentation</a></li>
                             <li><a href="https://www.youtube.com/channel/UCRNPvrhMwFczppgthkzv44A">Tutorials</a></li>
                             <!-- <li><a href="#">Starter Kits</a></li> -->
-                            <li><a href="#">Support</a></li>
+                            <li><a href="slack.devless.io">Support</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-4">
                     <div class="contactInfo">
                         <div class="h4">Connect with Us</div>
                         <ul class="footerLinkIcon">
@@ -343,18 +331,47 @@
             </div>
         </div>
     </div>
+    
     <!-- ======= /1.09 footer Area ====== -->
 
 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="js/jquery.1.11.3.min.js"></script> <!-- jQuery -->
         <script src="js/bootstrap.min.js"></script> <!-- Bootstrap -->
-        <script src="js/owl.carousel.min.js"></script> <!-- owlCarousel -->
-        <script src="js/waypoints.min.js"></script> <!-- waypoint -->
         <script src="js/active.js"></script> <!-- active js -->
-        <!-- <script src="js/chatScript.js" type="text/javascript"></script> --> <!--End of Tawk.to Script-->
+        <script src="js/devless-sdk.js"></script> <!-- active js -->
 
+<script type="text/javascript">
 
+    function signUp() {
+        var date = Date();
+        var purpose = 'SignUp form landing page';
+        var email = $('#email').val();
+        data={"when":date, "purpose":purpose, "email":email};
+        Devless.addData("signup","signup-table",function(response){
+                if(response.status_code == 609){
+                    //REPLACE WITH A BEATIFUL JQUERY POPUP OR SOMETHING
+                    $("#msg-msg").html("thanks for signing up");
+                    $('#signup-email').val("");
+                } else if (response.status_code == 700) {
+                    
+                    $("#msg-msg").html("sorry but seems you  already registered");
+                } else {
+                    $("#msg-msg").html("something just went wrong ");
+                }
+                $("#btnSignup").prop("disabled",false);
+                 return callback(response.status_code);
+            },data);
+
+    }
+    
+    (function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+  for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f)}})(document,window.mixpanel||[]);
+  mixpanel.init("5a760461a8b564da3c76b4b2e481ae3d");
+
+      mixpanel.track("visits");
+      
+</script>
 
     </body>
 
