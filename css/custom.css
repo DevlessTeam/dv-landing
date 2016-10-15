@@ -98,3 +98,54 @@ header .logo {
 header nav#navbar ul > li.current-menu-item > a{
     color: #fff;
 }
+
+
+
+.circle {
+    border: 1px solid;
+    border-radius: 50%;
+    float: left;
+    height: 12px;
+    margin-right: 5px;
+    width: 12px;
+    margin-bottom: 10px;
+}
+.circle-red {
+    background: #f5716b;
+    border-color: #cd4739;
+}
+.circle-yellow {
+    background: #fae501;
+    border-color: #d1c003;
+}
+.circle-green {
+    background: #16d595;
+    border-color: #05a972;
+}
+.browser-head {
+    background: #dbe3e7;
+    border-left: 1px solid #c5d2d8;
+    border-radius: 3px 3px 0 0;
+    border-right: 1px solid #c5d2d8;
+    border-top: 1px solid #c5d2d8;
+    padding: 12px 12px 24px;
+}
+.browser-body {
+    color: #b4c3ca;
+    border-bottom: 1px solid #eceef0;
+    margin-bottom: -1px;
+}
+.browser-body {
+    background: #fff;
+    border-left: 1px solid rgba(0, 0, 0, 0.06);
+    border-right: 1px solid rgba(0, 0, 0, 0.06);
+    font-family: "Courier New",sans-serif;
+    padding: 0;
+    height: auto;
+}
+.img-cut {
+    height: auto;
+    margin-bottom: -120px;
+    margin-top: -16px;
+    width: 100%;
+}
