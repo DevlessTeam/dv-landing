@@ -149,3 +149,6 @@ header nav#navbar ul > li.current-menu-item > a{
     margin-top: -16px;
     width: 100%;
 }
+.bs-docs-sidebar {
+    padding-left: 0;
+}
