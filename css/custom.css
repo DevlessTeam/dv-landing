@@ -149,3 +149,21 @@ header nav#navbar ul > li.current-menu-item > a{
     margin-top: -16px;
     width: 100%;
 }
+header .topInfo {
+    text-align: right;
+}
+header .topInfo li a {
+    margin: 0;
+    margin-right: 30px;
+}
+.headerTopArea .footerLinkIcon li a {
+    /*background: #288feb;*/
+    border: 1px solid #288feb;
+    color: #288feb;
+}
+header nav#navbar {
+    margin-right: 0;
+}
+.headerTopArea iframe {
+    margin-top: 15px;
+}
