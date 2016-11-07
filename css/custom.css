@@ -149,6 +149,7 @@ header nav#navbar ul > li.current-menu-item > a{
     margin-top: -16px;
     width: 100%;
 }
+<<<<<<< HEAD
 .bs-docs-sidebar {
     padding-left: 0;
 }
@@ -161,4 +162,23 @@ header nav#navbar ul > li.current-menu-item > a{
     text-align: center;
     margin: 0;
     padding: 5px 0;
+=======
+header .topInfo {
+    text-align: right;
+}
+header .topInfo li a {
+    margin: 0;
+    margin-right: 30px;
+}
+.headerTopArea .footerLinkIcon li a {
+    /*background: #288feb;*/
+    border: 1px solid #288feb;
+    color: #288feb;
+}
+header nav#navbar {
+    margin-right: 0;
+}
+.headerTopArea iframe {
+    margin-top: 10px;
+>>>>>>> 38a3ff084f5e0f7dddac712235200df34dac0a32
 }
