@@ -77,14 +77,11 @@
 .homeContent p {
     color: #738191;
 }
-.ctaTxt p {
-    margin-bottom: 30px;
-}
 .singleService {
     margin-top: 0;
 }
 header .headerBottomArea {
-    padding: 0;
+    padding: 20px;
 }
 #navbar li {
     padding: 20px 10px;
@@ -149,7 +146,6 @@ header nav#navbar ul > li.current-menu-item > a{
     margin-top: -16px;
     width: 100%;
 }
-<<<<<<< HEAD
 .bs-docs-sidebar {
     padding-left: 0;
 }
@@ -162,23 +158,31 @@ header nav#navbar ul > li.current-menu-item > a{
     text-align: center;
     margin: 0;
     padding: 5px 0;
-=======
-header .topInfo {
-    text-align: right;
 }
-header .topInfo li a {
-    margin: 0;
-    margin-right: 30px;
+.getStarted {
+    margin-top: 30px;
 }
-.headerTopArea .footerLinkIcon li a {
-    /*background: #288feb;*/
-    border: 1px solid #288feb;
-    color: #288feb;
+.getStarted input[type="email"], .getStarted input[type="password"] {
+    border: medium none;
+    background: transparent;
+    padding: 5px;
+    border-bottom: 1px solid #efefef;
+    color: #3e3e3e;
+    width: 100%;
 }
-header nav#navbar {
-    margin-right: 0;
+.gsButton {
+    margin-top: 20px;
 }
-.headerTopArea iframe {
+.gsButton .Btn {
+    background: #288FEB;
+}
+#navbar li {
+    border-radius: 5px;
+    padding: 10px;
+}
+header .logo {
     margin-top: 10px;
->>>>>>> 38a3ff084f5e0f7dddac712235200df34dac0a32
+}
+.homeOverlay {
+    background: rgba(255,255,255, 0.5);
 }

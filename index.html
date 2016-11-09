@@ -26,20 +26,20 @@
 
     <!-- ======= 1.01 Header Area ====== -->
     <header>
-    <div class="headerTopArea">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-5 col-sm-2 col-xs-5">
-                        <iframe src="https://ghbtns.com/github-btn.html?user=DevlessTeam&repo=DV-PHP-CORE&type=star&count=false&size=large" frameborder="0" scrolling="0" width="170px" height="30px"></iframe>
-                    </div>
-                    <div class="col-md-7 col-sm-10 col-xs-7">
-                        <ul class="topInfo">
-                            <li class="email"><a href="mailto:info@devless.io"><i class="icofont icofont-ui-v-card"></i>info@devless.io</a></li>
-                        </ul>
-                    </div>
+    <div class="headerTopArea hide">
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-5 col-sm-2 col-xs-5">
+                    <iframe src="https://ghbtns.com/github-btn.html?user=DevlessTeam&repo=DV-PHP-CORE&type=star&count=false&size=large" frameborder="0" scrolling="0" width="170px" height="30px"></iframe>
+                </div>
+                <div class="col-md-7 col-sm-10 col-xs-7">
+                    <ul class="topInfo">
+                        <li class="email"><a href="mailto:info@devless.io"><i class="icofont icofont-ui-v-card"></i>info@devless.io</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
+    </div>
         <div class="headerBottomArea">
             <div class="container">
                 <div class="row">
@@ -69,24 +69,32 @@
 
     <!-- ======= 1.02 Home Area ====== -->
     <div class="homeArea animated">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-5">
-                    <div class="homeContent">
-                        <span class="h2 homeTitle">Build a scalable backend at lightning speed</span>
-                        <p>DevLess is a platform that allows you to easily build robust backends for your web and mobile applications by piecing together plug and play backend modules.</p>
-                        <div class="homeBtn">
-                            <!-- <a href="#" class="btnOne Btn"><i class="icofont icofont-rocket-alt-2"></i>Get Started Now</a> -->
-                            <a href="https://heroku.com/deploy?template=https://github.com/DevlessTeam/DV-PHP-CORE/tree/heroku2" target="_blank" class="heroBtn">
-                                <img src="img/get_started.svg" alt="Deploy">
-                            </a>
+        <div class="homeOverlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="homeContent">
+                            <span class="h2 homeTitle">Build a scalable backend at lightning speed</span>
+                            <p>Devless is a platform that allows you to easily build robust backends for your web and mobile applications by piecing together plug and play backend modules.</p>
+
+                            <div class="row getStarted">
+                                <div class="col-md-6">
+                                    <input type="email" name="email" placeholder="Enter your email">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="password" name="password" placeholder="Choose a password">
+                                </div>
+                            </div>
+                            <div class="gsButton">
+                                <a href="#" class="Btn">Get Started now</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-7">
-                    <div class="homeImgTable">
-                        <div class="homeImg">
-                            <img src="img/home-dsk-1.png" alt="">
+                    <div class="col-md-7">
+                        <div class="homeImgTable">
+                            <div class="homeImg">
+                                <img src="img/home-dsk-1.png" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -96,7 +104,6 @@
     <!-- ======= /1.02 Home Area ====== -->
 
     <!-- ======= 4.01 Step Area ====== -->
-
     <div class="stepArea secPdng animated">
         <div class="container">
             <div class="row">
@@ -135,9 +142,7 @@
                     </div>
                 </div>
                 <div class="col-md-12 mr-t-50 text-center">
-                    <a href="https://heroku.com/deploy?template=https://github.com/DevlessTeam/DV-PHP-CORE/tree/heroku2" target="_blank" class="heroBtn">
-                        <img src="img/get_started.svg" alt="Deploy">
-                    </a>
+                    <a class="ctaBtn Btn" href="#">Get Started</a>
                 </div>
             </div>
         </div>
@@ -194,13 +199,7 @@
                         <div class="ctaCell">
                             <div class="h3">Say goodbye to <span>vendor lock-in!</span></div>
                             <p>DevLess is open source, thus is infinitely customizable, and you’ll never be locked into a proprietary system. We are backed by a community of developers who contribute to the project and provide a high level of support to the project.</p>
-<<<<<<< HEAD
-                            <a href="https://heroku.com/deploy?template=https://github.com/DevlessTeam/DV-PHP-CORE/tree/heroku2" target="_blank" class="heroBtn">
-=======
-                            <a href="https://heroku.com/deploy?template=https://github.com/DevlessTeam/DV-PHP-CORE/tree/heroku2" target="_blank" onclick="started()" class="heroBtn">
->>>>>>> 38a3ff084f5e0f7dddac712235200df34dac0a32
-                                <img src="img/get_started.svg" alt="Deploy">
-                            </a>
+                            <a class="ctaBtn Btn" href="#">Get Started</a>
                         </div>
                     </div>
                 </div>
@@ -212,13 +211,7 @@
                         <div class="ctaCell">
                             <div class="h3">Detailed documentation and tutorials.</div>
                             <p>Learning to use DevLess is fast and easy, thanks to our detailed documentation and accompanying tutorial videos and articles. Boilerplate templates for popular frontend platforms will also be available soon.</p>
-<<<<<<< HEAD
-                            <a href="https://heroku.com/deploy?template=https://github.com/DevlessTeam/DV-PHP-CORE/tree/heroku2" target="_blank" class="heroBtn">
-=======
-                            <a href="https://heroku.com/deploy?template=https://github.com/DevlessTeam/DV-PHP-CORE/tree/heroku2" target="_blank" onclick="started()" class="heroBtn">
->>>>>>> 38a3ff084f5e0f7dddac712235200df34dac0a32
-                                <img src="img/get_started.svg" alt="Deploy">
-                            </a>
+                            <a class="ctaBtn Btn" href="#">Get Started</a>
                         </div>
                     </div>
                 </div>
@@ -279,13 +272,7 @@
                     </div>
                 </div>
                 <div class="col-md-12 mr-t-50 text-center">
-<<<<<<< HEAD
-                    <a href="https://heroku.com/deploy?template=https://github.com/DevlessTeam/DV-PHP-CORE/tree/heroku2" target="_blank" class="heroBtn">
-=======
-                    <a href="https://heroku.com/deploy?template=https://github.com/DevlessTeam/DV-PHP-CORE/tree/heroku2" target="_blank" onclick="started()" class="heroBtn">
->>>>>>> 38a3ff084f5e0f7dddac712235200df34dac0a32
-                        <img src="img/get_started.svg" alt="Deploy">
-                    </a>
+                    <a class="ctaBtn Btn" href="#">Get Started</a>
                 </div>
             </div>
         </div>
@@ -403,16 +390,16 @@
 
     }
     
-    (function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
-  for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f)}})(document,window.mixpanel||[]);
-  mixpanel.init("5a760461a8b564da3c76b4b2e481ae3d");
+  //   (function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+  // for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f)}})(document,window.mixpanel||[]);
+  // mixpanel.init("5a760461a8b564da3c76b4b2e481ae3d");
 
-      mixpanel.track("visits");
 
-      function started() {
-            mixpanel.track("clicked");
-      }
-      
+  // mixpanel.track("visits");
+
+  // function started() {
+  //       mixpanel.track("clicked");
+  // }
 </script>
 
     </body>
