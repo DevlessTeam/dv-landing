@@ -45,6 +45,7 @@
 }
 .footerLogo img {
 	height: 37px;
+    margin-top: -15px;
 }
 .footerTxt {
     margin-bottom: 0;
