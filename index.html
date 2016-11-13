@@ -77,18 +77,20 @@
                             <span class="h2 homeTitle">Build a scalable backend at lightning speed</span>
                             <p>Devless is a platform that allows you to easily build robust backends for your web and mobile applications by piecing together plug and play backend modules.</p>
                            <br>
-                            <span style="color:green">We sent you an email with details to your new instance</span>
-                            <div class="row getStarted">
+                            <span id="msg-space" style="color:green"><b></b></span>
+                            <div id="get-stdd">
+                            <div  class="row getStarted">
                                 <div class="col-md-6">
-                                    <input type="email" name="email" placeholder="Enter your email" autofocus>
+                                    <input type="email" name="email" id="signup-email" placeholder="Enter your email" autofocus>
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="password" name="password" placeholder="Choose a password">
+                                    <input type="password"  id="signup-password" name="password" placeholder="Choose a password">
                                 </div>
                             </div>
                             <div class="gsButton">
-                                <a href="#" class="Btn">Get Started now</a>
+                                <a href="#" onclick="rollAnInstance()" id="get-started-btn" class="Btn">Get Started now</a>
                             </div>
+                          </div>
                         </div>
                     </div>
                     <div class="col-md-7">
@@ -373,6 +375,47 @@
 
 <script type="text/javascript">
 
+var constants = { "token":"Devless", "domain":"https://devless-signup.herokuapp.com" };
+ Devless = new Devless(constants);
+
+     window.Devless = new Devless(constants);
+
+     function rollAnInstance() {
+          $('#get-started-btn').text("Creating...");
+         postAccountCreation = function(res) {
+           console.log(res);
+           if(res.status_code == 1001) {
+             window.location.assign("https://heroku.com/deploy?template=https://github.com/DevlessTeam/DV-PHP-CORE/tree/heroku2");
+           } else if(res.status_code == 609) {
+               $('#signup-email').val("");
+               $('#signup-password').val("");
+               $('#msg-space').text('Nice you instance is ready sent the url via email. Happy coding :)')
+               $("#get-stdd").hide();
+           } else {
+               $('#msg-space').text('Hmm something went terribly wrong :(')
+           }
+
+         }
+
+         email = $('#signup-email').val();
+         password = $('#signup-password').val();
+         appname = generatedName();
+         username  = generatedName();
+
+         account = {
+             "appname": appname,
+             "username": username,
+             "email": email,
+             "password": password,
+             "heroku_users_urls_id": 1,
+             "appdescription": "No description",
+         }
+
+         Devless.addData('heroku_users', 'apps_creation_attempts', account, postAccountCreation);
+
+     }
+
+    //uncomment only for production
 
   //   (function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
   // for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f)}})(document,window.mixpanel||[]);
@@ -384,5 +427,6 @@
   // function started() {
   //       mixpanel.track("clicked");
   // }
+
 </script>
 </html>
