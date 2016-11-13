@@ -375,8 +375,10 @@
 
 <script type="text/javascript">
 
-var constants = { "token":"Devless", "domain":"https://devless-signup.herokuapp.com" };
- Devless = new Devless(constants);
+var constants = { "token":"af4882c14154d6fe324c4a5e6ce96b23", "domain":"http://45.33.95.89:3333" };
+Devless = new Devless(constants);
+
+Devless = new Devless(constants);
 
      window.Devless = new Devless(constants);
 
@@ -393,6 +395,7 @@ var constants = { "token":"Devless", "domain":"https://devless-signup.herokuapp.
                $("#get-stdd").hide();
            } else {
                $('#msg-space').text('Hmm something went terribly wrong :(')
+               $('#get-started-btn').text(":(");
            }
 
          }
@@ -412,6 +415,7 @@ var constants = { "token":"Devless", "domain":"https://devless-signup.herokuapp.
          }
 
          Devless.addData('heroku_users', 'apps_creation_attempts', account, postAccountCreation);
+
 
      }
 
