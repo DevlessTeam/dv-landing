@@ -20,7 +20,7 @@ $(document).ready(function ($) {
 
 
 
-	window.adjs = [
+	adjs = [
     "autumn", "hidden", "bitter", "misty", "silent", "empty", "dry", "dark",
     "summer", "icy", "delicate", "quiet", "white", "cool", "spring", "winter",
     "patient", "twilight", "dawn", "crimson", "wispy", "weathered", "blue",
@@ -31,7 +31,7 @@ $(document).ready(function ($) {
     "fragrant", "aged", "snowy", "proud", "floral", "restless", "divine",
     "polished", "ancient", "purple", "lively", "nameless"
  ];
-window.nouns = [
+nouns = [
     "waterfall", "river", "breeze", "moon", "rain", "wind", "sea", "morning",
     "snow", "lake", "sunset", "pine", "shadow", "leaf", "dawn", "glitter",
     "forest", "hill", "cloud", "meadow", "sun", "glade", "bird", "brook",
@@ -46,8 +46,8 @@ window.nouns = [
 
 function generatedName() {
     num  = Math.round(Math.random()*100) + 1
-	var adjs = window.adjs;
-	var nouns = window.nouns;
+	var adjs = adjs;
+	var nouns = nouns;
     adj  = adjs[Math.floor(Math.random()*adjs.length)];
     noun = nouns[Math.floor(Math.random()*nouns.length)];
 	separator = "-";
