@@ -46,8 +46,8 @@ nouns = [
 
 function generatedName() {
     num  = Math.round(Math.random()*100) + 1
-	var adjs = adjs;
-	var nouns = nouns;
+	var adjs = window.adjs;
+	var nouns = window.nouns;
     adj  = adjs[Math.floor(Math.random()*adjs.length)];
     noun = nouns[Math.floor(Math.random()*nouns.length)];
 	separator = "-";
