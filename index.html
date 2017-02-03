@@ -75,16 +75,13 @@
                     <div class="col-md-5">
                         <div class="homeContent">
                             <span class="h2 homeTitle">Build a scalable backend at lightning speed</span>
-                            <p>Devless is a platform that allows you to easily build robust backends for your web and mobile applications by piecing together plug and play backend modules.</p>
+                            <p>DevLess is a platform that allows you to easily build robust backends for your web and mobile applications by piecing together plug and play backend modules.</p>
                            <br>
                             <span id="msg-space" style="color:green"><b></b></span>
                             <div id="get-stdd">
                             <div  class="row getStarted">
                                 <div class="col-md-6">
                                     <input type="email" name="email" id="signup-email" placeholder="Enter your email" autofocus>
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="password"  id="signup-password" name="password" placeholder="Choose a password">
                                 </div>
                             </div>
                             <div class="gsButton">
@@ -386,33 +383,12 @@
         mixpanel.track("clicked");
   }
 
-var constants = { "token":"164311ab13c927cba92dbcc58e66c1e4", "domain":"https://misty-surf-6250.herokuapp.com" }; Devless = new Devless(constants);
+var constants = { "token":"d6b51b0c05a3a4514420ae39c7331f26", "domain":"https://instance10.devless.io" }; Devless = new Devless(constants);
 
-
-
-Devless = new Devless(constants);
-
-Devless = new Devless(constants);
-
-     window.Devless = new Devless(constants);
 
      function rollAnInstance() {
           $('#get-started-btn').text("Creating...");
-         postAccountCreation = function(res) {
-           console.log(res);
-           if(res.status_code == 1001) {
-             window.location.assign("https://heroku.com/deploy?template=https://github.com/DevlessTeam/DV-PHP-CORE/tree/heroku2");
-           } else if(res.status_code == 609) {
-               $('#signup-email').val("");
-               $('#signup-password').val("");
-               $('#msg-space').text('Nice you instance is ready please check your Inbox(spam Box too). Happy coding :)')
-               $("#get-stdd").hide();
-           } else {
-               $('#msg-space').text('Hmm something went terribly wrong :(')
-               $('#get-started-btn').text(":(");
-           }
-
-         }
+           
          function validateEmail(email) {
         var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         return re.test(email);
@@ -422,21 +398,19 @@ Devless = new Devless(constants);
          appname = generatedName();
          username  = generatedName();
 
-         account = {
-             "appname": appname,
-             "username": username,
-             "email": email,
-             "password": password,
-             "heroku_users_urls_id": 1,
-             "appdescription": "No description",
-         }
-
-         if(email.length == 0 || password.length == 0 || !validateEmail(email)) {
-              $('#msg-space').text('Really, how do you expect me to create an instance with such credentials. Come on.')
+         if(email.length == 0 || !validateEmail(email)) {
+              $('#msg-space').text('Really, how do you expect me to create an instance with such an email. Come on.')
               $('#get-started-btn').text("GET STARTED NOW");
          } else{
-             Devless.addData('heroku_users', 'apps_creation_attempts', account, postAccountCreation);
+		   $.get( "https://instance10.devless.io/service/open_deployment/view/deploy?email="+email, function( data ) {
+			console.log(data = JSON.parse(data))
+			if(data.status_code == 1110) {
+				$('#msg-space').text('Your Devless instance is ready. I sent the URL to your mail')
+				$('#get-started-btn').hide()
+}        
+});	
          }
+
 
 
 
