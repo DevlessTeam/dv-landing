@@ -20,36 +20,14 @@ $(document).ready(function ($) {
 
 
 
-	adjs = [
-    "autumn", "hidden", "bitter", "misty", "silent", "empty", "dry", "dark",
-    "summer", "icy", "delicate", "quiet", "white", "cool", "spring", "winter",
-    "patient", "twilight", "dawn", "crimson", "wispy", "weathered", "blue",
-    "billowing", "broken", "cold", "damp", "falling", "frosty", "green",
-    "long", "late", "lingering", "bold", "little", "morning", "muddy", "old",
-    "red", "rough", "still", "small", "sparkling", "throbbing", "shy",
-    "wandering", "withered", "wild", "black", "young", "holy", "solitary",
-    "fragrant", "aged", "snowy", "proud", "floral", "restless", "divine",
-    "polished", "ancient", "purple", "lively", "nameless"
- ];
-nouns = [
-    "waterfall", "river", "breeze", "moon", "rain", "wind", "sea", "morning",
-    "snow", "lake", "sunset", "pine", "shadow", "leaf", "dawn", "glitter",
-    "forest", "hill", "cloud", "meadow", "sun", "glade", "bird", "brook",
-    "butterfly", "bush", "dew", "dust", "field", "fire", "flower", "firefly",
-    "feather", "grass", "haze", "mountain", "night", "pond", "darkness",
-    "snowflake", "silence", "sound", "sky", "shape", "surf", "thunder",
-    "violet", "water", "wildflower", "wave", "water", "resonance", "sun",
-    "wood", "dream", "cherry", "tree", "fog", "frost", "voice", "paper",
-    "frog", "smoke", "star"
- ];
+  function started() {
+        mixpanel.track("clicked");
+  }
+
+var constants={token:"d6b51b0c05a3a4514420ae39c7331f26",domain:"https://instance10.devless.io"};Devless=new Devless(constants);
+function rollAnInstance(){started();$("#msg-space").text("Redirecting to Heroku ...");email=$("#signup-email").val();password=$("#signup-password").val();0!=email.length&&/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email)?$.get("https://instance10.devless.io/service/open_deployment/view/deploy?email="+email,function(a){console.log(a=JSON.parse(a));1110==a.status_code&&($("#msg-space").text("Redirecting to Heroku ..."),
+window.location.href="https://heroku.com/deploy?template=https://github.com/DevlessTeam/DV-PHP-CORE/tree/heroku2")}):($("#msg-space").text("Really, how do you expect me to create an instance with such an email. Come on."),$("#get-started-btn").text("GET STARTED NOW"))};
 
 
-function generatedName() {
-    num  = Math.round(Math.random()*100) + 1
-	var adjs = window.adjs;
-	var nouns = window.nouns;
-    adj  = adjs[Math.floor(Math.random()*adjs.length)];
-    noun = nouns[Math.floor(Math.random()*nouns.length)];
-	separator = "-";
-	return adj+separator+noun+separator+num;
-}
+
+
