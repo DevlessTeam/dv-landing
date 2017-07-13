@@ -1,0 +1,129 @@
+
+.filtr-item {
+    padding: 0em;
+   width: 33.3335%; 
+    float: left;
+}
+.filtr-container {
+	width:100%;
+}
+.item-desc {
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    position: absolute;
+    text-transform: uppercase;
+    text-align: center;
+
+    z-index: 1;
+    
+}
+
+/* Filter controls */
+.simplefilter li, .multifilter li, .sortandshuffle li {
+      color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    padding: 7px 20px;
+    font-size: 0.9em;
+    margin: 0 0.1em;
+    text-transform: uppercase;
+}
+.simplefilter li {
+        border:2px solid #171616;
+		background:#171616;
+		    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -o-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+}
+.simplefilter li.active {
+    border: 2px solid #0ac876;
+    color: #fff;
+    background:#0ac876;
+}
+/* Shuffle and sort controls */
+select {
+    padding: 1rem 1rem;
+    text-transform: uppercase;
+}
+.sortandshuffle .shuffle-btn {
+    background-color: #dec800;
+}
+.sortandshuffle .sort-btn {
+    background-color: #de0000;
+}
+.sortandshuffle .sort-btn.active {
+    background-color: #9d0000;
+}
+
+/*----*/
+.filtr-item {
+    transform: scale(1) translate3d(0px, 0px, 0px);
+	-o-transform: scale(1) translate3d(0px, 0px, 0px);   
+    transition: all 0.5s ease-out 0ms;
+	-o-transition: all 0.5s ease-out 0ms;
+	transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+}
+
+/*----*/
+ul.simplefilter {
+    text-align: center;
+	margin-bottom: 3em;
+}
+@media(max-width:1080px){
+
+	ul.simplefilter {
+		text-align: center;
+		margin-bottom: 2em;
+	}
+	.simplefilter li, .multifilter li, .sortandshuffle li {
+		padding:6px 18px;
+		font-size: 0.8em;
+		margin: 0 0.1em;
+	}
+}
+@media(max-width:991px){
+	.filtr-item{
+		float:left;
+		width:33.33%;
+	}
+	ul.simplefilter {
+		text-align: center;
+		margin-bottom: 2em;
+	}
+}
+@media(max-width:768px){
+	.filtr-item{
+		float:left;
+		width:50%;
+	}
+}
+@media(max-width:667px){
+	.simplefilter li, .multifilter li, .sortandshuffle li {
+		padding: 4px 15px;
+		font-size: 0.7em;
+		margin: 0 0.1em;
+	}
+}
+@media(max-width:600px){
+	.filtr-item {
+		padding: 0em;
+	}
+	ul.simplefilter {
+		margin-bottom: 0em;
+	}
+	.simplefilter li, .multifilter li, .sortandshuffle li {
+		margin-bottom: 1em;
+	}
+
+	}
+	@media(max-width:414px){
+	ul.simplefilter {
+		margin-bottom: 0em;
+	}
+	.filtr-item{
+		width:100%;
+	}
+}
