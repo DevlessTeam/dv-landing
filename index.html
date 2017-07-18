@@ -368,10 +368,16 @@
         <script src="js/jquery.1.11.3.min.js"></script> <!-- jQuery -->
         <script src="js/bootstrap.min.js"></script> <!-- Bootstrap -->
         <script src="js/active.js"></script> <!-- active js -->
-        <script src="js/devless-sdk.js"></script> <!-- active js -->
+        <!-- <script src="js/devless-sdk.js"></script> <!-- active js --> -->
         <script src="js/custom.js"></script>
          <script src="https://cdn.smooch.io/smooch.min.js"></script>
          <script>
-             Smooch.init({ appToken: '9wokwlxqcy4n953mn3l2zz9y7' });
+             Smooch.init({ appToken: 'dwceebhfw3pg84b8a5x4xqucp' });
+             Smooch.sendMessage('Hello there Edmond here !!', {
+                role: 'appMaker'
+            }).then(() => {
+                // async code
+            });
+             Smooch.open();
          </script>
 <script src="js/mixpanel.js"></script><!-- Mixpanel js -->
