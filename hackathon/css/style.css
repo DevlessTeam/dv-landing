@@ -223,7 +223,7 @@ a.navbar-brand i{
     padding: 20px 30px;
 }
  .modal-dialog {
-    margin: 109px auto;
+    margin: 45px auto;
 }
 /*-- //modal --*/
 /*-- main --*/
@@ -621,6 +621,7 @@ p.w3l_sub_para_agile {
     margin: 0 auto;
     letter-spacing: 1px;
     padding-top: 2em;
+    margin-top: -0.6em;
 }
 .medile_agile_its_green {
      background: #06080e;
@@ -666,7 +667,7 @@ p.w3l_sub_para_agile {
 }
 .banner-bottom h6,.inner_main_agile_section h6 {
     text-align: center;
-    letter-spacing: 7px;
+    letter-spacing: 4px;
     color: #0ac876;
     font-size: 1em;
     font-weight: 600;
