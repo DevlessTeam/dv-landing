@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Devless - Simplest way to integrate services into your application</title>
+
+    <!-- main css file -->
+    <link rel="stylesheet" href="css/custom/style.css">
+    <!-- responsive css file -->
+    <link rel="stylesheet" href="css/responsive/responsive.css">
+    <link rel="stylesheet" href="css/docs.css">
+    <link rel="stylesheet" href="css/helper.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
+
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    </head>
+    <body class="home">
+
+    <!-- ======= 1.01 Header Area ====== -->
+    <header>
+        <div class="headerBottomArea">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 col-sm-3 col-xs-9">
+                        <a href="index-1.html" class="logo"><img src="img/logo.png" alt=""></a>
+                    </div>
+                    <div class="col-md-10 menuCol col-sm-9 col-xs-9">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                <span class="sr-only"></span>
+                                <i class="fa fa-navicon"></i>
+                            </button>
+                        </div>
+                        <nav id="navbar" class="collapse navbar-collapse">
+                            <ul id="nav">
+                                <li class="current-menu-item"><a href="https://docs.devless.io/">Documentation</a></li>
+                                <!-- <li><a href="#" class="btnOne Btn txt-light"></i>Get Started</a></li> -->
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ======= /1.01 Header Area ====== -->
+
+    <!-- ======= 2.01 Page Title Area ====== -->
+
+    <div class="pageTitleArea animated">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="pageTitle">
+                        <div class="h2">What is DevLess good for ?</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sectionBar"></div>
+
+    <!-- ======= 1.04 Service Area ====== -->
+    <div class="serviceArea animated iconBg pd-b-90 pd-t-30">
+        <div class="container">
+            <div class="row service">
+
+                <div class="col-md-3" role="complementary">
+                    <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm">
+                        <ul class="nav bs-docs-sidenav">
+                            <li>
+                                <a href="#type">Some Use cases</a>
+                                <ul class="nav">
+                                    <li><a href="#web-app">Building Web Apps</a></li>
+                                    <li><a href="#mobile-app">Serve as backend for mobile apps</a></li>
+                                    <li><a href="#iot">IOT Backend</a></li>
+                                    <li><a href="#central-ds">Central DataStore</a></li>
+                                    <li><a href="#existing-app">Adding functionalities to an existing app</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
+
+                <div class="col-md-9" role="main">
+                    <div class="bs-docs-section">
+                        <h1 id="type" class="page-header">Use Cases</h1>
+                        <!-- Headings -->
+                        <h2 id="web-app">Building Web Apps</h2>
+
+                        <p> DevLess is particularly good for building web applications. Some of the features that makes it easy includes automagically generated apis on creating tables by clicking and selecting over a user interface. With api endpoints available for each table created you can now feed this right into your web app. But then DevLess does not leave you there, it provides an HTML SDK . Yh! you heard me right an HTML SDK that allows the developer to get data by just writing plain old HTML . EG: To get data from a table labelled products all I have to do it add a DevLess directive to my tbody tag like &lt;tbody class=&#34;dv-get-all:inventory:products&#34;&#62; DevLess will pull all the data from the products table  under the service name inventory and display within the table. By the way services is a way of namespacing tables within DevLess. A service also comes with a script section which allowes developers to write rules to control the data coming and leaving the DevLess framework. For example if I wanted to captialize all names going to the database this is as simple as ->beforeCreating()->convertToUpperCase($input_name)->then->storeAs($input_name). 
+                        To learn more or get started <a href="https://devless.gitbooks.io/devless-docs-1-3-0/content/why-devless.html">click me</a> 
+                        </p>
+
+                        <h2 id="mobile-app">Serve as backend for mobile apps</h2>
+
+                        <p> Building a mobile app involves not only writing code for the app itself but also the backend that handles data persistence and  events like fireing up emails and handling long running tasks. Point is knowing how to build a mobile app is not enough you also need to either know how to build your backend or get someone to handle this for you.Its interesting how the majority of the backend frameworks we have are built as if everything we build is for the browser. For example most frameworks ship with HTML based error pages or lets talk about session storage that depends on the browser. Yes we can fine tune these frameworks to use for our mobile app but lets not forget we will still use the same backend for our web version as well. So why not have a framework that providez endpoints that is useful both for web and mobile? Most importantly why not make it easier so the mobile developer doesn't have to battle with all this backend stuff and just focus on the mobile app. This is exactly what DevLess does. On creating tables endpoints are generated and can be accessed via our mobile SDKs. Also in the event the developer has a need for some backend functionalities like sending emails you are able to install this right from our service hub. This is how mobile development should be. To learn more or get started <a href="https://devless.gitbooks.io/devless-docs-1-3-0/content/why-devless.html">click me</a> 
+                       </p>
+                        
+                        
+                        <h2 id="iot">IOT Backend</h2>
+
+                        <p> So most IOT apps are hardware based. But then just like mobile apps IOT apps also need a place to persist data as well as run server based tasks. This is what DevLess is great for.All you need to do is fill out a form to create your tables and generate api endpoints instantly with which you can perform CRUD actions.Oh also you don't have to deal with these endpoints directly DevLess provides SDKs to help out with this. To learn more or get started <a href="https://devless.gitbooks.io/devless-docs-1-3-0/content/why-devless.html">click me</a> </p>
+
+                        <h2 id="central-ds">Central DataStore</h2>
+
+                        <p>Lets say for some valid reasons you need to write your app in mutiple languages. And you will need these components to talk to each other. DevLess makes this even easier. So Let DevLess connect to the database then pull in the data to any of the languages using the SDK for that language. Also by letting DevLess sit ontop of the Database you will be able to use the HTML SDK or JS SDK to query data right within your web app as well as manage privacy and authentication To learn more or get started <a href="https://devless.gitbooks.io/devless-docs-1-3-0/content/why-devless.html">click me</a></p>
+                        
+                        <h2 id="existing-app">Adding functionalities to an existing app</h2>
+
+                        <p> DevLess has a service hub from where you can install backend functionalities with a single click. Now the interesting part is that you may use these installed services right within your frontend but also you can install it into any framework by pulling in the right SDK. This helps you reduce the number of dependencies you pull into your app. To learn more or get started <a href="https://devless.gitbooks.io/devless-docs-1-3-0/content/why-devless.html">click me</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ======= /1.04 Service Area ====== -->
+
+    <div class="sectionBar"></div>
+
+    
+    <!-- ======= 1.09 footer Area ====== -->
+    <footer class="secPdng animated">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="footerInfo">
+                        <a href="index-1.html" class="footerLogo">
+                            <img src="img/logo.png" alt="">
+                        </a>
+                        <div class="footerTxt">
+                            <p>The business first application framework</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="widget">
+                        <div class="h4">Resources</div>
+                        <ul class="footerLink">
+                            <!-- <li><a href="https://devless.gitbooks.io/devless-docs-1-3-0/content/why-devless.html">Documentation</a></li> -->
+                            <li><a href="https://www.youtube.com/channel/UCRNPvrhMwFczppgthkzv44A">Tutorials</a></li>
+                            <li><a href="https://github.com/DevlessTeam/web-starter-pack/archive/master.zip">Starter Kits</a></li>
+                            <li><a href="http://slack.devless.io">Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="contactInfo">
+                        <div class="h4">Social Media</div>
+                        <ul class="footerLinkIcon">
+                            <li><a href="https://www.facebook.com/devless.io"><i class="icofont icofont-social-facebook"></i></a></li>
+                            <li><a href="https://www.twitter.com/devlessio"><i class="icofont icofont-social-twitter"></i></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCRNPvrhMwFczppgthkzv44A"><i class="icofont icofont-social-youtube"></i></a></li>
+                            <li><a href="http://slack.devless.io/"><i class="icofont icofont-social-slack"></i></a></li>
+                            <li><a href="https://github.com/DevlessTeam/"><i class="icofont icofont-social-github"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="contactInfo">
+                        <div class="h4">Connect with Us</div>
+                        <div class="footerTxt mr-t-20">
+                            <p>DevLess, 225 Bush St, Floor 10, <br/>San Francisco, CA 94107</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="sectionBar"></div>
+
+    <div class="">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="copyrightTxt">
+                        <p>&copy; Copyright 2017 - DevLess, All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+    <!-- ======= /1.09 footer Area ====== -->
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="js/jquery.1.11.3.min.js"></script> <!-- jQuery -->
+        <script src="js/bootstrap.min.js"></script> <!-- Bootstrap -->
+        <script src="js/active.js"></script> <!-- active js -->
+        <!-- <script src="js/devless-sdk.js"></script> <!-- active js --> 
+        <script src="js/custom.js"></script>
+         <script src="https://cdn.smooch.io/smooch.min.js"></script>
+         <script>
+             Smooch.init({ appToken: 'dwceebhfw3pg84b8a5x4xqucp' });
+             Smooch.sendMessage("Hello there, Edmond here. Do you have any questions or just curious what DevLess is about? Don't be shy lets talk. You can also drop me a line team@devless.io", {
+                role: 'appMaker'
+            }).then(() => {
+
+            });
+             Smooch.open();
+         </script>
+<script src="js/mixpanel.js"></script><!-- Mixpanel js -->
+</body>
+</html>
