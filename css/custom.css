@@ -395,3 +395,19 @@ footer {
     display: block;
     text-align: center;
 }
+.featuresArea .sectionTitle {
+    margin-bottom: 0;
+}
+.featuresArea .singleService {
+    text-align: left;
+    margin-top: 60px;
+}
+.featuresArea .singleService .serviceIcon {
+    height: 50px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: -1px;
+}
+.featuresArea .serviceContent .h3 {
+    margin-top: 20px;
+}
