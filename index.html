@@ -22,19 +22,23 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
       <![endif]-->
   </head>
-  <body class="home">
+  <body class="home v2">
 
     <!-- ======= 1.01 Header Area ====== -->
     <header id="home">
-        <div class="headerTopArea hide">
-            <div class="container ">
+        <div class="headerTopArea">
+            <div class="container">
                 <div class="row">
-                    <div class="col-md-5 col-sm-2 col-xs-5">
-                        <iframe src="https://ghbtns.com/github-btn.html?user=DevlessTeam&repo=DV-PHP-CORE&type=star&count=false&size=large" frameborder="0" scrolling="0" width="170px" height="30px"></iframe>
+                    <div class="col-md-5 col-sm-3 col-xs-5">
+                        <div class="langOpt">
+                            <span class="langTxt">Need help getting started: &nbsp;</span>
+                            <span class="langIcon"><a href="#">Join Community</a></span>
+                        </div>
                     </div>
-                    <div class="col-md-7 col-sm-10 col-xs-7">
+                    <div class="col-md-7 col-sm-9 col-xs-7">
                         <ul class="topInfo">
                             <li class="email"><a href="mailto:info@devless.io"><i class="icofont icofont-ui-v-card"></i>info@devless.io</a></li>
+                            <li class="herokuBtn"><a href="#"><i class="icofont icofont-rocket-alt-1"></i>1-click Heroku Install</a></li>
                         </ul>
                     </div>
                 </div>
@@ -56,9 +60,10 @@
                         <nav id="navbar" class="collapse navbar-collapse">
                             <ul id="nav">
                                 <li ><a href="/uses" target="blank">Use Cases</a></li>
-                                <li ><a href="https://github.com/DevlessTeam/web-starter-pack/archive/master.zip" target="blank">Starter Pack</a></li>
-                                <li class="current-menu-item"><a href="https://devless.gitbooks.io/devless-docs-1-3-0/content/why-devless.html" target="blank">Documentation</a></li>
-
+                                <li ><a href="/uses" target="blank">Features</a></li>
+                                <li ><a href="/uses" target="blank">Why DevLess</a></li>
+                                <!-- <li ><a href="https://github.com/DevlessTeam/web-starter-pack/archive/master.zip" target="blank">Starter Pack</a></li> -->
+                                <li class="current-menu-item"><a href="https://devless.gitbooks.io/devless-docs-1-3-0/quick-start.html" target="blank">Documentation</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -76,9 +81,9 @@
                     <div class="col-md-5">
                         <div class="homeContent">
                             <span class="h2 homeTitle">Build your Apps Faster</span>
-                            <p>Easily add data storage and backend features to your web and mobile applications so that your app development becomes quicker and easier. With DevLess, there's little need for server side programming and configuration.</p>
+                            <p>Easily add data storage and backend functionality to your web and mobile applications so that your app development becomes quicker and easier. With DevLess, there's little need for server side programming and configuration.</p>
                             <br>
-                            <a class="ctaBtn Btn" href="#home">Get Started</a>
+                            <a class="ctaBtn Btn" href="https://devless.gitbooks.io/devless-docs-1-3-0/quick-start.html"><i class="icofont icofont-rocket-alt-2"></i>Get Started</a>
                         </div>
                     </div>
                     <div class="col-md-7">
@@ -94,13 +99,26 @@
     </div>
     <!-- ======= /1.02 Home Area ====== -->
 
+    <div class="ctaTwo hide">
+        <div class="container  animated fadeInUp" style="opacity: 1;">
+            <div class="row">
+                <div class="col-md-12">
+                    <span class="ctaTxtTwo">Need help getting started with your Web or Mobile App?</span>
+                    <div class="ctaBtn"><a href="http://slack.devless.io" class="btnOne Btn">Join Our Community</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <!-- ======= 4.01 Step Area ====== -->
-    <div class="stepArea secPdng animated hide">
+    <div class="stepArea secPdng animated">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="sectionTitle">
-                        <div class="h2">Building your <span>product</span> should be <span>easy</span> period !!</div>
+                        <div class="h2">Building your <span>product</span> should be <span>easier</span> period !!!</div>
+                        <br>
+                        <div class="subTitle">DevLess does all the heavy lifting for you so you could <strong>Develop Less</strong>!</div>
                     </div>
                 </div>
             </div>
@@ -109,8 +127,8 @@
                     <div class="singleStep">
                         <div class="stepNo">1</div>
                         <div class="stepContent">
-                            <div class="h4">Roll out an instance</div>
-                            <p>Set up a DevLess instance with a <a href="https://www.heroku.com/deploy?template=https://github.com/DevlessTeam/DV-PHP-CORE/tree/heroku3">1-click deployment step</a>. You can also <a href="https://devless.gitbooks.io/devless-docs-1-3-0/content/how-to-setup-devless.html" target="blank">deploy</a> on any host of your choice.</p>
+                            <div class="h4">Build Your Frontend</div>
+                            <p>Using your favorite stack, build your awesome web or mobile application and make your use interface and experience awesome.</p>
                         </div>
                     </div>
                 </div>
@@ -118,7 +136,7 @@
                     <div class="singleStep">
                         <div class="stepNo">2</div>
                         <div class="stepContent">
-                            <div class="h4">Install plug and play modules</div>
+                            <div class="h4">Integrate DevLess Backend</div>
                             <p>DevLess provides plug and play modules for common functionality you’ll need to power your app, We also provide custom functionalities on demand.</p>
                         </div>
                     </div>
@@ -127,21 +145,21 @@
                     <div class="singleStep">
                         <div class="stepNo">3</div>
                         <div class="stepContent">
-                            <div class="h4">Ready!</div>
+                            <div class="h4">Launch your Product!</div>
                             <p>Use any frontend technology of your choice - You can also get started with our <a href="https://github.com/DevlessTeam/web-starter-pack/archive/master.zip">starter pack.</a></p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-12 mr-t-50 text-center">
-                    <a class="ctaBtn Btn" href="#home">Get Started</a>
+                    <a class="ctaBtn Btn" href="https://devless.gitbooks.io/devless-docs-1-3-0/quick-start.html"><i class="icofont icofont-rocket-alt-2"></i>Get Started</a>
+                    <a class="ctaBtn btnOne Btn" href="https://devless.gitbooks.io/devless-docs-1-3-0/quick-start.html">Documentation</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="sectionBar hide"></div>
-
     <!-- ======= 1.04 Service Area ====== -->
+    <div class="sectionBar"></div>
     <div class="serviceArea secPdngT animated iconBg hide">
         <div class="container">
             <div class="row">
@@ -164,7 +182,62 @@
     </div>
     <!-- ======= /1.04 Service Area ====== -->
 
+
     <div class="sectionBar hide"></div>
+    <div class="blogArea secPdng hide">
+        <div class="container">
+            <article class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="singlePost">
+                        <div class="postImg"><a href="#"><img src="https://placehold.it/370x235" alt=""></a></div>
+                        <div class="postContent">
+                            <a href="#" class="postTitle h4">Power Packed Out-of-the-box Features</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 animated fadeInUp" style="opacity: 1;">
+                    <div class="singlePost">
+                        <div class="postImg"><a href="#"><img src="https://placehold.it/370x235" alt=""></a></div>
+                        <div class="postContent">
+                            <a href="#" class="postTitle h4">SDKs for popular Frameworks</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6  animated fadeInUp" style="opacity: 1;">
+                    <div class="singlePost">
+                        <div class="postImg"><a href="#"><img src="https://placehold.it/370x235" alt=""></a></div>
+                        <div class="postContent">
+                            <a href="#" class="postTitle h4">Vibrant Developer Community</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <div class="hide">
+        <div class="container  animated fadeInUp" style="opacity: 1;">
+            <div class="row ctaRow">
+                <div class="col-md-6">
+                    <div class="ctaImgOne">
+                        <img src="img/server.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6 ctaCol">
+                    <div class="ctaRight ctaTxt" style="height: 300px;">
+                        <div class="ctaCell">
+                            <div class="h2">Dedicated and Secured server for your website</div>
+                            <p>Get the best speed for your website. Don’t lose anymore <br>clients for the slowest speed of your hosting service.</p>
+                            <a href="#" class="ctaBtn Btn"><i class="icofont icofont-rocket-alt-2"></i>Get Started Now</a>
+                            <a class="ctaBtn btnOne Btn" href="https://devless.gitbooks.io/devless-docs-1-3-0/quick-start.html">Documentation</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sectionBar hide "></div>
 
     <!-- ======= 1.04 Service Area ====== -->
     <div class="featuresArea secPdng animated">
@@ -172,7 +245,10 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="sectionTitle">
-                        <div class="h2">Breathe Life into your App <br>with  these <span>Out-of-the-box </span> Features</div>
+                        <div class="h2">Breathe Life into your App <br>with  our <span>Out-of-the-box </span> Features</div>
+                        <br>
+                        <!-- <div>DevLess powers client-side javascript frameworks and all major server-side languages and technologies. <br>With our HTML SDK, you can even bring new life to your static HTML sites.</div> -->
+                        <div class="subTitle">DevLess doesn’t restrict you to any framework (React, VueJS, Android, iOS, React Native, Angular, etc) <br> or language (JS, Ruby, PHP, Go, Python, etc). DevLess even powers static HTML websites.</div>
                     </div>
                 </div>
             </div>
@@ -244,13 +320,207 @@
                     </div>
                 </div>
             </div>
+            <div class="text-center">
+                <a class="ctaBtn Btn mr-t-60" href="https://devless.gitbooks.io/devless-docs-1-3-0/quick-start.html"><i class="icofont icofont-rocket-alt-2"></i>Get Started</a>
+                <a class="ctaBtn btnOne Btn" href="https://devless.gitbooks.io/devless-docs-1-3-0/quick-start.html">Documentation</a>
+            </div>
         </div>
     </div>
     <!-- ======= /1.04 Service Area ====== -->
+    <div class="sectionBar"></div>
+
+    <div class="teamArea secPdng animated fadeInUp" style="opacity: 1;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="sectionTitle">
+                        <div class="h2">Mobile and Web Developers <br><span>love to build</span> their solutions with DevLess</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="singleTeam">
+                        <div class="teamImg"><img src="http://placehold.it/100x100" alt=""></div>
+                        <div class="teamContent">
+                            <div class="memberName h4">Open Source and Customizable</div>
+                            <div class="teamTxt">
+                                <p>Base technology of DevLess is completely open and free. It can be extended to suit your needs. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="singleTeam">
+                        <div class="teamImg"><img src="http://placehold.it/100x100" alt=""></div>
+                        <div class="teamContent">
+                            <div class="memberName h4">Cost Effective and Fast</div>
+                            <div class="teamTxt">
+                                <p>DevLess helps you save 3x the money and time spent setting up, developing and administrating your backend. We have re-usable modules, services and hosting available to help you cut down.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="singleTeam">
+                        <div class="teamImg"><img src="http://placehold.it/100x100" alt=""></div>
+                        <div class="teamContent">
+                            <div class="memberName h4">Your business first</div>
+                            <div class="teamTxt">
+                                <p>Most frameworks focus on making coding easy, DevLess focus more on supporting your business. DevLess is built with the business owner's and beginner developer’s mindset to quickly bring their ideas and concept to fruition.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="singleTeam">
+                        <div class="teamImg"><img src="http://placehold.it/100x100" alt=""></div>
+                        <div class="teamContent">
+                            <div class="memberName h4">Very low learning curve</div>
+                            <div class="teamTxt">
+                                <p>Build the backend for your app using a GUI without having to interact with any servers and terminals. All you want is an app so launch now, code later.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="singleTeam">
+                        <div class="teamImg"><img src="http://placehold.it/100x100" alt=""></div>
+                        <div class="teamContent">
+                            <div class="memberName h4">Ready Support</div>
+                            <div class="teamTxt">
+                                <p>We provide around the clock world class support for all of users during and after development to continually keep improving and making the tool more friendly, awesome and scalable.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="singleTeam">
+                        <div class="teamImg"><img src="http://placehold.it/100x100" alt=""></div>
+                        <div class="teamContent">
+                            <div class="memberName h4">Modular</div>
+                            <div class="teamTxt">
+                                <p>You don't have to start from scratch. Choose from a wide range of modules, services, web or mobile application startup kits, themes ranging from simple sites to complex applications, all free and open-sourced.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="singleTeam">
+                        <div class="teamImg"><img src="http://placehold.it/100x100" alt=""></div>
+                        <div class="teamContent">
+                            <div class="memberName h4">Growing community</div>
+                            <div class="teamTxt">
+                                <p>We have a growing community of developers with mixed skill levels that keeps growing and supporting other developers especially beginners developers with learning and also in building good apps on their journey to becoming experienced developers.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="singleTeam">
+                        <div class="teamImg"><img src="http://placehold.it/100x100" alt=""></div>
+                        <div class="teamContent">
+                            <div class="memberName h4">Your Product First</div>
+                            <div class="teamTxt">
+                                <p>Every good user interface and experience takes time and work to achieve. With DevLess taking care of your backend code and infrastructure management you can now focus on your frontend and deliver ultimate user interface and experience to your users.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="singleTeam">
+                        <div class="teamImg"><img src="http://placehold.it/100x100" alt=""></div>
+                        <div class="teamContent">
+                            <div class="memberName h4">Use your own framework or language</div>
+                            <div class="teamTxt">
+                                <p>DevLess doesn’t restrict you to any framework (React, VueJS, Android, iOS, React Native, Angular, etc) or language (JS, Ruby, PHP, Go, Python, etc). DevLess is compatible with all your existing toolsets and doesn’t require you to change rather do less.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="sectionBar"></div>
 
+    <div class="blogArea secPdng">
+        <div class="container">
+            <article class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="singlePost">
+                        <div class="postImg"><a href="#"><img src="https://placehold.it/370x235" alt=""></a></div>
+                        <div class="postContent">
+                            <a href="#" class="postTitle h4">Deployment Options</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 animated fadeInUp" style="opacity: 1;">
+                    <div class="singlePost">
+                        <div class="postImg"><a href="#"><img src="https://placehold.it/370x235" alt=""></a></div>
+                        <div class="postContent">
+                            <a href="#" class="postTitle h4">SDKs for popular Frameworks</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6  animated fadeInUp" style="opacity: 1;">
+                    <div class="singlePost">
+                        <div class="postImg"><a href="#"><img src="https://placehold.it/370x235" alt=""></a></div>
+                        <div class="postContent">
+                            <a href="#" class="postTitle h4">Vibrant Developer Community</a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <div class="clientArea secPdng animated fadeInUp" style="opacity: 1;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="sectionTitle">
+                        <div class="h2">Our <span>Partners</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 col-sm-4 col-xs-6">
+                    <div class="singleClient"><a href="#"><img src="http://placehold.it/180x70" alt=""></a></div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-6">
+                    <div class="singleClient"><a href="#"><img src="http://placehold.it/180x70" alt=""></a></div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-6">
+                    <div class="singleClient"><a href="#"><img src="http://placehold.it/180x70" alt=""></a></div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-6">
+                    <div class="singleClient"><a href="#"><img src="http://placehold.it/180x70" alt=""></a></div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-6">
+                    <div class="singleClient"><a href="#"><img src="http://placehold.it/180x70" alt=""></a></div>
+                </div>
+                <div class="col-md-2 col-sm-4 col-xs-6">
+                    <div class="singleClient"><a href="#"><img src="http://placehold.it/180x70" alt=""></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ctaTwo ">
+        <div class="container  animated fadeInUp" style="opacity: 1;">
+            <div class="row">
+                <div class="col-md-12">
+                    <span class="ctaTxtTwo">Need help getting started with your Web or Mobile App?</span>
+                    <div class="ctaBtn"><a href="http://slack.devless.io" class="btnOne Btn">Join Our Community</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!-- ======= 1.06 Cta Area ====== -->
+    <div class="sectionBar hide"></div>
     <div class="ctaArea secPdng animated hide">
         <div class="container">
             <div class="row">
@@ -271,7 +541,7 @@
                         <div class="ctaCell">
                             <div class="h3">Say goodbye to <span>vendor lock-in!</span></div>
                             <p>DevLess is open source, thus is infinitely customizable, and you’ll never be locked into a proprietary system. We are backed by a community of developers who contribute to the project and provide a high level of support to the project.</p>
-                            <a class="ctaBtn Btn" href="#home">Get Started</a>
+                            <a class="ctaBtn Btn" href="https://devless.gitbooks.io/devless-docs-1-3-0/quick-start.html"><i class="icofont icofont-rocket-alt-2"></i>Get Started</a>
                         </div>
                     </div>
                 </div>
@@ -283,7 +553,7 @@
                         <div class="ctaCell">
                             <div class="h3">No more migrations,  deployment headaches</div>
                             <p>Forget all the traditional processes you go through just to get you app running. DevLess can be likened to an automatic gear box. It handles all the boiler plate work leaving you to focus on your app. Learn more from our <a href="https://devless.gitbooks.io/devless-docs-1-3-0/content/why-devless.html">Docs</a></p>
-                            <a class="ctaBtn Btn" href="#home">Get Started</a>
+                            <a class="ctaBtn Btn" href="https://devless.gitbooks.io/devless-docs-1-3-0/quick-start.html"><i class="icofont icofont-rocket-alt-2"></i>Get Started</a>
                         </div>
                     </div>
                 </div>
@@ -297,7 +567,7 @@
     </div>
     <!-- ======= /1.06 Cta Area ====== -->
 
-    <div class="sectionBar hide"></div>
+    <div class="sectionBar "></div>
 
     <!-- ======= 1.04 Service Area ====== -->
     <div class="serviceArea secPdng animated iconBg hide">
@@ -343,7 +613,7 @@
                             </div>
                         </div>
                         <div class="col-md-12 mr-t-50 text-center">
-                            <a class="ctaBtn Btn" href="#home">Get Started</a>
+                            <a class="ctaBtn Btn" href="https://devless.gitbooks.io/devless-docs-1-3-0/quick-start.html"><i class="icofont icofont-rocket-alt-2"></i>Get Started</a>
                         </div>
 
                     </div>
@@ -424,12 +694,12 @@
         <script src="js/custom.js"></script>
         <script src="https://cdn.smooch.io/smooch.min.js"></script>
         <script>
-         Smooch.init({ appToken: 'dwceebhfw3pg84b8a5x4xqucp' });
-         Smooch.sendMessage("Hello there, Edmond here. Do you have any questions or just curious what DevLess is about? Don't be shy lets talk. You can also drop me a line team@devless.io", {
-            role: 'appMaker'
-        }).then(() => {
+        //  Smooch.init({ appToken: 'dwceebhfw3pg84b8a5x4xqucp' });
+        //  Smooch.sendMessage("Hello there, Edmond here. Do you have any questions or just curious what DevLess is about? Don't be shy lets talk. You can also drop me a line team@devless.io", {
+        //     role: 'appMaker'
+        // }).then(() => {
 
-        });
-        Smooch.open();
+        // });
+        // Smooch.open();
     </script>
     <script src="js/mixpanel.js"></script><!-- Mixpanel js -->
