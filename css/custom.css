@@ -9,8 +9,8 @@
 }
 @media only screen and (max-width: 6000px) and (min-width: 992px){
 	header nav#navbar > ul {
-	     border-right: none; 
-	}
+      border-right: none; 
+  }
 }
 .bg-blue {
 	background: #288feb;
@@ -481,4 +481,12 @@ header .langIcon {
 header {
     font-family: "proxima_novasemibold";
     font-size: 13px;
+}
+.teamImg {
+    border-radius: unset;
+    height: 80px;
+    width: 80px;
+}
+.teamContent {
+    padding-left: 110px;
 }
