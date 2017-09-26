@@ -453,9 +453,9 @@ a.Btn:nth-child(2) {
 .memberName.h4 {
     margin-bottom: 18px;
 }
-.clientArea, .v2 .clientArea {
+/*.clientArea, .v2 .clientArea {
     background: #f0f5fa;
-}
+}*/
 .featuresArea {
     background: #fcfeff;
 }
@@ -489,4 +489,13 @@ header {
 }
 .teamContent {
     padding-left: 110px;
+}
+.singleClient img {
+    max-height: 80px !important;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+.singleClient img:hover {
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
 }
