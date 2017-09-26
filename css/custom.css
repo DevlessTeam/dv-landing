@@ -509,3 +509,16 @@ header {
 .countTitle {
     font-size: 20px;
 }
+#sk-holder #sk-container #sk-wrapper {
+    height: 500px !important;
+    width: 360px !important;
+}
+.sk-header-wrapper {
+    background: #365272 !important;
+}
+.sk-msg {
+    background: #f0f5fa !important;
+}
+#sk-holder #sk-container #sk-conversation .sk-row.sk-right-row .sk-msg, #sk-holder #sk-container #sk-conversation .sk-row.sk-right-row .sk-msg-image {
+    color: #738191 !important;
+}
