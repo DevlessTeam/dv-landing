@@ -499,3 +499,13 @@ header {
     -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
     filter: grayscale(0%);
 }
+.countup p{
+    font-size: 40px;
+    font-weight: 100;
+    font-family: "proxima_nova_rgregular";
+    margin-bottom: 20px;
+    /*color: #288FEB;*/
+}
+.countTitle {
+    font-size: 20px;
+}
