@@ -441,8 +441,15 @@ header nav#navbar {
 header .headerBottomArea, .v2 .homeArea {
     background: #f0f5fa;
 }
-a.Btn:nth-child(2) {
-    margin-left: 15px;
+@media only screen and (min-width: 480px){
+    a.Btn:nth-child(2) {
+        margin-left: 15px;
+    }
+}
+@media only screen and (max-width: 479px){
+    a.Btn:nth-child(2) {
+        margin-top: 15px;
+    }
 }
 .btnOne.Btn {
     background: #ed8100;
@@ -521,4 +528,29 @@ header {
 }
 #sk-holder #sk-container #sk-conversation .sk-row.sk-right-row .sk-msg, #sk-holder #sk-container #sk-conversation .sk-row.sk-right-row .sk-msg-image {
     color: #738191 !important;
+}
+header .langIcon {
+    padding: 0;
+}
+.langIcon img {
+    height: 50px;
+    padding: 9px 0 10px;
+}
+.v2 header .topInfo li.clientAreaLi span, .v2 header .langIcon, .boardMenu li.active a {
+    background: transparent;
+}
+.v2 .langTxt {
+    display: inline-block;
+}
+@media only screen and (max-width: 991px) and (min-width: 768px){
+    .stepContent {
+        padding-left: 10px;
+        margin-bottom: 30px;
+        margin-top: 10px;
+    }
+}
+@media only screen and (min-width: 768px){
+    .featuresArea .subTitle {
+        padding: 0 10%
+    }
 }
