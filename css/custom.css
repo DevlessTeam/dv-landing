@@ -554,3 +554,16 @@ header .langIcon {
         padding: 0 10%
     }
 }
+@media only screen and (max-width: 767px) and (min-width: 0px){
+    .menuCol {
+        top: 0;
+    }
+}
+@media only screen and (max-width: 991px) and (min-width: 0px){
+    .navbar-header {
+        right: 15px;
+    }
+    #navbar li {
+        padding: 0;
+    }
+}
