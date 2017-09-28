@@ -735,6 +735,14 @@
 	}).then(() => {
 
 	});
-	Smooch.open();
+	$(document).ready(function ($) {
+		var scrollCount = 0;
+		$( window ).scroll(function() {
+			scrollCount++;
+			if (scrollCount < 10 && scrollCount > 1) {
+				Smooch.open();
+			}
+		});
+	});
 </script>
 <script src="js/mixpanel.js"></script><!-- Mixpanel js -->
