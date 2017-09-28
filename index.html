@@ -729,20 +729,24 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
 <script src="http://bfintal.github.io/Counter-Up/jquery.counterup.min.js"></script>
 <script>
-	Smooch.init({ appToken: 'dwceebhfw3pg84b8a5x4xqucp' });
-	Smooch.sendMessage("Hello there, Edmond here. Ask me anything, or share your feedback. You can also drop me a line at team@devless.io", {
-		role: 'appMaker'
-	}).then(() => {
-
-	});
 	$(document).ready(function ($) {
-		var scrollCount = 0;
-		$( window ).scroll(function() {
-			scrollCount++;
-			if (scrollCount < 10 && scrollCount > 1) {
-				Smooch.open();
-			}
-		});
+
+		if($(window).width() > 768) {
+			Smooch.init({ appToken: 'dwceebhfw3pg84b8a5x4xqucp' });
+			Smooch.sendMessage("Hello there, Edmond here. Ask me anything, or share your feedback. You can also drop me a line at team@devless.io", {
+				role: 'appMaker'
+			}).then(() => {
+
+			});
+
+			var scrollCount = 0;
+			$( window ).scroll(function() {
+				scrollCount++;
+				if (scrollCount < 10 && scrollCount > 1) {
+					Smooch.open();
+				}
+			});
+		}
 	});
 </script>
 <script src="js/mixpanel.js"></script><!-- Mixpanel js -->
