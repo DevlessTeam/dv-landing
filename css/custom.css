@@ -433,7 +433,7 @@ header nav#navbar {
     margin-right: 0;
 }
 .v2 header .headerTopArea, .v2 header .langTxt, .v2 header .topInfo li a {
-    background: #365272;
+    background: #233141;
 }
 .v2 header .topInfo li.clientAreaLi span, .v2 header .langIcon, .boardMenu li.active a {
     background: #233141;
@@ -473,7 +473,7 @@ header .topInfo li.herokuBtn a {
     color: #fff;
     display: inline-block;
     font-size: 13px;
-    line-height: 50px;
+    line-height: 51px;
     margin-left: 30px;
     padding: 0 30px;
 }
@@ -534,7 +534,7 @@ header .langIcon {
 }
 .langIcon img {
     height: 50px;
-    padding: 9px 0 10px;
+    padding: 12px 0 15px;
 }
 .v2 header .topInfo li.clientAreaLi span, .v2 header .langIcon, .boardMenu li.active a {
     background: transparent;
@@ -566,4 +566,32 @@ header .langIcon {
     #navbar li {
         padding: 0;
     }
+}
+.homeOverlay {
+    background: #015a82;
+}
+.v2 .homeContent span.h2 {
+    color: #fff;
+}
+.v2 header .headerBottomArea{
+    background: #015A82;
+    border-bottom: 1px solid rgba(255,255,255, 0.1);
+}
+.v2 header .headerTopArea {
+    border: none;
+}
+.v2 .homeContent p {
+    color: #fff;
+}
+.v2 header nav#navbar ul > li > a {
+    color: #efefef;
+}
+header nav#navbar ul > li.current-menu-item > a, header nav#navbar ul > li > a:hover {
+    color: #fff;
+}
+.v2 .homeImg img {
+    max-height: 500px;
+}
+.v2 .homeImg {
+    text-align: right;
 }
