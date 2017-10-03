@@ -20,9 +20,9 @@
 
 
 
-  function started() {
-        mixpanel.track("clicked");
-  }
+function started() {
+	mixpanel.track("clicked");
+}
 
 // var constants={token:"d6b51b0c05a3a4514420ae39c7331f26",domain:"https://instance10.devless.io"};Devless=new Devless(constants);
 // function rollAnInstance(){$("#msg-space").text("Redirecting to Heroku ...");email=$("#signup-email").val();password=$("#signup-password").val();0!=email.length&&/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email)?$.get("https://instance10.devless.io/service/open_deployment/view/deploy?email="+email,function(a){console.log(a=JSON.parse(a));1110==a.status_code&&($("#msg-space").text("Redirecting to Heroku ..."),
@@ -31,3 +31,9 @@
 
 
 
+jQuery(document).ready(function($) {
+	$('.counter').counterUp({
+		delay: 10,
+		time: 1000
+	});
+});

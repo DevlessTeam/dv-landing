@@ -9,8 +9,8 @@
 }
 @media only screen and (max-width: 6000px) and (min-width: 992px){
 	header nav#navbar > ul {
-	     border-right: none; 
-	}
+      border-right: none; 
+  }
 }
 .bg-blue {
 	background: #288feb;
@@ -394,4 +394,204 @@ footer {
 .signMsg {
     display: block;
     text-align: center;
+}
+.featuresArea .sectionTitle {
+    margin-bottom: 0;
+}
+.featuresArea .singleService {
+    text-align: left;
+    margin-top: 60px;
+}
+.featuresArea .singleService .serviceIcon {
+    height: 50px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: -1px;
+}
+.featuresArea .serviceContent .h3 {
+    margin-top: 20px;
+}
+.subTitle {
+    font-size: 18px;
+    line-height: 30px;
+}
+.singlePost .postContent {
+    border: 1px solid #dfebf5;
+    border-radius:0 0 4px 4px;
+    padding: 20px 15px;
+}
+.singlePost .postTitle.h4 {
+    font-family: "proxima_novasemibold";
+    font-size: 18px;
+    margin-bottom: 0;
+    text-align: center;
+}
+.singlePost .postImg img {
+    border-radius: 4px 4px 0 0;
+}
+header nav#navbar {
+    margin-right: 0;
+}
+.v2 header .headerTopArea, .v2 header .langTxt, .v2 header .topInfo li a {
+    background: #233141;
+}
+.v2 header .topInfo li.clientAreaLi span, .v2 header .langIcon, .boardMenu li.active a {
+    background: #233141;
+}
+header .headerBottomArea, .v2 .homeArea {
+    background: #f0f5fa;
+}
+@media only screen and (min-width: 480px){
+    a.Btn:nth-child(2) {
+        margin-left: 15px;
+    }
+}
+@media only screen and (max-width: 479px){
+    a.Btn:nth-child(2) {
+        margin-top: 15px;
+    }
+}
+.btnOne.Btn {
+    background: #ed8100;
+}
+.stepArea {
+    background: #fafcff;
+}
+.memberName.h4 {
+    margin-bottom: 18px;
+}
+/*.clientArea, .v2 .clientArea {
+    background: #f0f5fa;
+}*/
+.featuresArea {
+    background: #fcfeff;
+}
+.v2 header .topInfo li.herokuBtn a{
+    background: #233141;
+}
+header .topInfo li.herokuBtn a {
+    color: #fff;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 51px;
+    margin-left: 30px;
+    padding: 0 30px;
+}
+header .langIcon a{
+    line-height: 50px;
+    color: #fff;
+    margin: 0;
+}
+header .langIcon {
+    margin: 0;
+}
+header {
+    font-family: "proxima_novasemibold";
+    font-size: 13px;
+}
+.teamImg {
+    border-radius: unset;
+    height: 80px;
+    width: 80px;
+}
+.teamContent {
+    padding-left: 110px;
+}
+.singleClient img {
+    max-height: 80px !important;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+.singleClient img:hover {
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+}
+.countup p{
+    font-size: 40px;
+    font-weight: 100;
+    font-family: "proxima_nova_rgregular";
+    margin-bottom: 20px;
+    /*color: #288FEB;*/
+}
+.countTitle {
+    font-size: 20px;
+}
+#sk-holder #sk-container #sk-wrapper {
+    height: 500px !important;
+    width: 360px !important;
+}
+.sk-header-wrapper {
+    background: #365272 !important;
+}
+.sk-msg {
+    background: #f0f5fa !important;
+}
+#sk-holder #sk-container #sk-conversation .sk-row.sk-right-row .sk-msg, #sk-holder #sk-container #sk-conversation .sk-row.sk-right-row .sk-msg-image {
+    color: #738191 !important;
+}
+header .langIcon {
+    padding: 0;
+}
+.langIcon img {
+    height: 50px;
+    padding: 12px 0 15px;
+}
+.v2 header .topInfo li.clientAreaLi span, .v2 header .langIcon, .boardMenu li.active a {
+    background: transparent;
+}
+.v2 .langTxt {
+    display: inline-block;
+}
+@media only screen and (max-width: 991px) and (min-width: 768px){
+    .stepContent {
+        padding-left: 10px;
+        margin-bottom: 30px;
+        margin-top: 10px;
+    }
+}
+@media only screen and (min-width: 768px){
+    .featuresArea .subTitle {
+        padding: 0 10%
+    }
+}
+@media only screen and (max-width: 767px) and (min-width: 0px){
+    .menuCol {
+        top: 0;
+    }
+}
+@media only screen and (max-width: 991px) and (min-width: 0px){
+    .navbar-header {
+        right: 15px;
+    }
+    #navbar li {
+        padding: 0;
+    }
+}
+.homeOverlay {
+    background: #015a82;
+}
+.v2 .homeContent span.h2 {
+    color: #fff;
+}
+.v2 header .headerBottomArea{
+    background: #015A82;
+    border-bottom: 1px solid rgba(255,255,255, 0.1);
+}
+.v2 header .headerTopArea {
+    border: none;
+}
+.v2 .homeContent p {
+    color: #fff;
+}
+.v2 header nav#navbar ul > li > a {
+    color: #efefef;
+}
+header nav#navbar ul > li.current-menu-item > a, header nav#navbar ul > li > a:hover {
+    color: #fff;
+}
+.v2 .homeImg img {
+    max-height: 500px;
+}
+.v2 .homeImg {
+    text-align: right;
 }
