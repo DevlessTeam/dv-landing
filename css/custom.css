@@ -420,12 +420,6 @@ footer {
     border-radius:0 0 4px 4px;
     padding: 20px 15px;
 }
-.singlePost .postTitle.h4 {
-    font-family: "proxima_novasemibold";
-    font-size: 18px;
-    margin-bottom: 0;
-    text-align: center;
-}
 .singlePost .postImg img {
     border-radius: 4px 4px 0 0;
 }
@@ -594,4 +588,19 @@ header nav#navbar ul > li.current-menu-item > a, header nav#navbar ul > li > a:h
 }
 .v2 .homeImg {
     text-align: right;
+}
+.tutsArea .homeContent span.h2 {
+    font-size: 68px;
+}
+.singlePost {
+    min-height: 300px;
+}
+.singlePost .postTitle.h4 {
+    font-family: 'proxima_novalight';
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 0;
+}
+.singlePost .postContent {
+    padding: 15px;
 }
