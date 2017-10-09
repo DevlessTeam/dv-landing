@@ -591,6 +591,7 @@ header nav#navbar ul > li.current-menu-item > a, header nav#navbar ul > li > a:h
 }
 .tutsArea .homeContent span.h2 {
     font-size: 68px;
+    line-height: 70px;
 }
 .singlePost {
     min-height: 300px;
