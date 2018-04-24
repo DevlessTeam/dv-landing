@@ -491,6 +491,9 @@ header {
 .teamContent {
     padding-left: 110px;
 }
+.singleClient{
+    height: 100px;
+}
 .singleClient img {
     max-height: 80px !important;
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
